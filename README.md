@@ -1,6 +1,6 @@
 # 🩺 Breast Cancer Tumor Size Regression
 
-This project builds and evaluates regression models to predict **tumor size** from the [Breast Cancer Wisconsin (Diagnostic) Dataset](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)).
+This project builds and evaluates regression models to predict **tumor size** from the [Breast Cancer Wisconsin (Diagnostic) Dataset] dataset available in `scikit-learn`.
 
 ## 📌 Project Objective
 The goal is to **predict tumor size** (mean area of the tumor) based on various morphological features of cell nuclei measured from breast tissue biopsies.
@@ -12,7 +12,6 @@ This serves as a regression-based approach to understand the relationship betwee
 
 ### **1. Data Preprocessing**
 - Removes non-predictive columns (`id`, empty columns)
-- Encodes `diagnosis` (B = 0, M = 1) if present
 - Clips outliers on selected geometric features using IQR method
 - Scales features with `StandardScaler` (fit only on training set)
 - Provides **train-only fitting** and **test transformation** to avoid data leakage
@@ -30,3 +29,13 @@ This serves as a regression-based approach to understand the relationship betwee
 - Outputs metrics:
   - Mean Squared Error (MSE)
   - Coefficient of Determination (R²)
+ 
+📜 License
+
+This project is licensed under the MIT License.
+
+🙌 Acknowledgements
+
+scikit-learn Breast Cancer Dataset Documentation
+
+Original dataset creators: W. Nick Street, W.H. Wolberg, and O.L. Mangasarian
